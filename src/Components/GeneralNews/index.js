@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from "react"
-import { getBusinessNews } from "../../APIs/getBusinessNews"
 import Carousel from 'react-bootstrap/Carousel';
 import './index.css'
-export default function BusinessNews() {
+import { getGeneralNews } from "../../APIs/getGeneralNews";
+export default function GeneralNews() {
     const [news, setBusinessNews] = useState()
     const settings = {
         dots: true,
@@ -13,7 +13,7 @@ export default function BusinessNews() {
     };
     useEffect(() => {
         const getNews = async () => {
-            const data = await getBusinessNews()
+            const data = await getGeneralNews()
             console.log(data)
             setBusinessNews(data)
         }

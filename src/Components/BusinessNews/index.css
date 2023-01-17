@@ -1,0 +1,15 @@
+/* .indicator-item {
+    background-color: red;
+}
+.carousel-control-prev{
+    background-color: black !important;
+}
+.carousel-control-next{
+    background-color: black !important;
+}
+.carousel-control-next-icon{
+    background-color: black !important; 
+} */
+.carousel-control-next-icon, .carousel-control-prev-icon{
+    background-color: black !important;
+}
